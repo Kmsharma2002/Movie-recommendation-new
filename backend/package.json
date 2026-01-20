@@ -1,21 +1,19 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Fastify backend with OpenAI",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+  "main": "server.js",
+  "engines": {
+    "node": "18.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "@fastify/cors": "^11.2.0",
-    "dotenv": "^17.2.3",
-    "fastify": "^5.7.1",
-    "openai": "^6.16.0",
+    "fastify": "^4.26.0",
+    "@fastify/cors": "^9.0.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.24.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   }
